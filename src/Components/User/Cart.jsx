@@ -21,6 +21,9 @@ export default function Cart() {
 
     function showCart() {
         console.log("show cart");
+        if(auth.currentUser == null){
+            return;
+        }
 
         firestore.collection("users").where("email", "==", auth.currentUser.email).get()
             .then((querySnapshot) => {
