@@ -72,7 +72,7 @@ export default function ProductCard({ collectionId, docId, description, to }) {
                 <h3 className="card-title fs-5">{productData?.Model}</h3>
                 <h4 className="card-subtitle fs-6 text-muted">{productData?.Edition}</h4>
             </div>
-            <Link to={to}>
+            <Link to={to} className="text-center">
                 <img className="img-fluid" src={productData?.Image} alt="" />
             </Link>
             <div className="card-body d-none d-sm-block">
