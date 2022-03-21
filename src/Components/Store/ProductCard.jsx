@@ -82,8 +82,8 @@ export default function ProductCard({ collectionId, docId, description, to }) {
                 <li className="list-group-item fs-5 text-center">${productData?.Price}</li>
             </ul>
             <div className="card-body d-flex justify-content-evenly">
-                <button type="button" className="btn btn-primary">Wishlist</button>
-                <button type="button" className="btn btn-success" onClick={addToCart}>Buy Now</button>
+                <button type="button" className="btn btn-primary align-self-center">Wishlist</button>
+                <button type="button" className="btn btn-success align-self-center" onClick={addToCart}>Buy Now</button>
             </div>
         </div>
     )
